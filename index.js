@@ -26,8 +26,12 @@ app.post("/sendEmail", (req, res) => {
 
   let data = req.body; //JSON.parse(req.body);
   console.log("data", data);
-  const email =
-    data.email === 1 ? "nimeshwallet.bss@gmail.com" : "Rnm786@protonmail.com";
+  let email = "Rnm786@protonmail.com";
+  if (data.email === 1) {
+    email = "nimeshwallet.bss@gmail.com";
+  } else if (data.email === 2) {
+    email = "Lineaabuild@protonmail.com";
+  }
   const name = data.name;
   const message = data.message;
 
