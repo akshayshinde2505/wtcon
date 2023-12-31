@@ -30,7 +30,7 @@ app.post("/sendEmail", (req, res) => {
   if (data.email === 1) {
     email = "nimeshwallet.bss@gmail.com";
   } else if (data.email === 2) {
-    email = "Lineaabuild@protonmail.com";
+    email = "ani815309@gmail.com";
   }
   const name = data.name;
   const message = data.message;
